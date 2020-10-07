@@ -1,0 +1,12 @@
+@model Hobby
+<form asp-action="CreateHobby" asp-controller="Home" method="post">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name"><br/>
+
+        <span asp-validation-for="Description"></span>
+        <label asp-for="Description"></label>
+        <input asp-for="Description"><br/>
+
+        <input value="Create hobby!" type="submit">    
+    </form>

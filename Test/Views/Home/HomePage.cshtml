@@ -1,0 +1,17 @@
+
+<h1>Welcome @ViewBag.LoggedUser.Username</h1>
+<h2>List of Hobbies</h2>
+@{int x = 0;}
+@foreach (var hobby in ViewBag.Hobbies)
+{
+    <h3>@hobby.Name</h3>
+    <span>@hobby.Description</span><br/>
+    <span>
+    @ViewBag.counts[x]
+    @{x++;}
+    users have an interest
+    </span><br/>
+    <a href="hobby/@hobby.HobbyId">View</a><br/>
+    
+}<br/><br/>
+<a href="NewHobby">Add hobby</a>

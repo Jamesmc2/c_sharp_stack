@@ -1,0 +1,19 @@
+@model Student
+    <form asp-action="Results" asp-controller="Home" method="post">
+        <span asp-validation-for="Name"></span>
+        <label asp-for="Name"></label>
+        <input asp-for="Name"><br/>
+        <span asp-validation-for="Location"></span>
+        <label asp-for="Location"></label>
+        <input asp-for="Location"><br/>
+
+        <span asp-validation-for="FavoriteLanguage"></span>
+        <label asp-for="FavoriteLanguage"></label>
+        <input asp-for="FavoriteLanguage"><br/>
+        
+        <span asp-validation-for="Comment"></span>
+        <label asp-for="Comment"></label>
+        <input asp-for="Comment"><br/>
+        
+        <input value="Submit survey" type="submit">    
+    </form>

@@ -1,0 +1,11 @@
+@model Hobby
+<h2>@Model.Name</h2>
+<P>@Model.Description</P>
+<a href="/AddHobby/@Model.HobbyId">Add to my hobbies</a>
+<h3>Users who share this hobby:</h3>
+@foreach (var intrest in Model.Intrested)
+{
+    <p>@intrest.User.FirstName @intrest.User.LastName</p>
+}
+<br/>
+<a href="/HomePage">Home</a>

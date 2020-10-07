@@ -1,0 +1,8 @@
+<h1>Here are my Users!</h1>
+<ul>
+@foreach(var user in ViewBag.Users)
+{
+    
+    <li>@user.Name @user.Age</li>
+}
+</ul>
